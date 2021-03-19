@@ -1,0 +1,37 @@
+
+
+<template>
+  <view class="container">
+    <Banner />
+    <ToDoList />
+  </view>
+</template>
+
+<script>
+import Banner from './Banner'
+import ToDoList from './ToDoList'
+import TodoItem from './TodoItem'
+export default {
+  name: 'App',
+  components: {
+    Banner,
+    ToDoList,
+    TodoItem,
+  }
+}
+</script>
+
+
+
+<style>
+.container {
+  flex: 1;
+  padding-top:25px;
+  margin: 5;
+}
+.banner {
+  background-color: #5f9ea0;
+  justify-content: center;
+  margin-bottom: 20;
+}
+</style>
